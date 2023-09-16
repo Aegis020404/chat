@@ -12,7 +12,7 @@ function App() {
         socket?.emit('message', value)
     };
     useEffect(() => {
-        const newSocket = io('http://178.236.247.153/api/socket:80')
+        const newSocket = io('http://178.236.247.153/websocket:4444')
         setSocket(newSocket);
     }, [setSocket])
     const messageListener = (message: string) => {
